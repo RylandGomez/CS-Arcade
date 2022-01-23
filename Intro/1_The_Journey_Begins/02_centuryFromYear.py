@@ -9,10 +9,12 @@ def solution(year):
     the year 101 up to and including the year 200, etc.
     -------------------------------------------------------------------
     '''
-    
-    return math.ceil(year/100)
+
     # The math.ceil() function always rounds a float up to the nearest
     # integer and returns it.
+    
+    return math.ceil(year/100)
+    
 
 def solution2(year):
     '''
@@ -24,6 +26,7 @@ def solution2(year):
         year % 100 = 0).
         By adding one less than the floor division value, the algorithm
         ensures an output of +1 for all values except multiples of 100.
+    -------------------------------------------------------------------
     '''      
     return (year + 99) // 100
     
