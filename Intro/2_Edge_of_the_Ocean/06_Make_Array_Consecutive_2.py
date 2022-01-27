@@ -36,3 +36,4 @@ def condensed(statues):
     This is just an alternate one line version of the above code
     '''
     return max(statues) - min(statues) + 1 - len(statues)
+    
