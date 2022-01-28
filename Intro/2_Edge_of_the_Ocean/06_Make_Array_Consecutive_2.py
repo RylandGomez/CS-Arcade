@@ -1,15 +1,5 @@
 def solution(statues):
     '''
-    PROMPT
-    -------------------------------------------------------------------
-    Ratiorg got statues of different sizes as a present from CodeMaster
-    for his birthday, each statue having an non-negative integer size.
-    Since he likes to make things perfect, he wants to arrange them
-    from smallest to largest so that each statue will be bigger than
-    the previous one exactly by 1. He may need some additional statues
-    to be able to accomplish that. Help him figure out the minimum
-    number of additional statues needed.
-    -------------------------------------------------------------------
     EXPLANATION
     -------------------------------------------------------------------
     Total statues is actually calculated by:
@@ -27,13 +17,19 @@ def solution(statues):
     subtract how many we already have from this total to return our answer.
     -------------------------------------------------------------------
     '''
+
     total_statues = (max(statues) - min(statues) + 1)
     current_statues = len(statues)
     return total_statues - current_statues
 
 def condensed(statues):
     '''
-    This is just an alternate one line version of the above code
+    EXPLANATION
+    -------------------------------------------------------------------
+    This is just an alternate one line version of the above code,
+    condensed into one line.
+    -------------------------------------------------------------------
     '''
+    
     return max(statues) - min(statues) + 1 - len(statues)
     

@@ -1,16 +1,10 @@
 def solution(inputArray):
-    '''
-    PROMPT
-    -------------------------------------------------------------------
-    Given an array of integers, find the pair of adjacent elements that
-    has the largest product and return that product.
-    -------------------------------------------------------------------
-    '''
 
     return max([inputArray[i]*inputArray[i+1] for i in range(len(inputArray) - 1)])
 
 def expanded(inputArray):
     '''
+    EXPLANATION
     -------------------------------------------------------------------
     The previous solution uses a list comprehension that accomplishes
     the same as below. Comments are added to explain the process.

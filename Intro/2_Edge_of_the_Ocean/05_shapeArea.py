@@ -1,12 +1,5 @@
 def solution(n):
     '''
-    PROMPT
-    -------------------------------------------------------------------
-    A 1-interesting polygon is just a square with a side of length 1.
-    An n-interesting polygon is obtained by taking the
-    (n - 1)-interesting polygon and appending 1-interesting polygons to
-    its rim, side by side.
-    -------------------------------------------------------------------
     EXPLANATION
     -------------------------------------------------------------------
     In each iteration of n-interesting polygons, we are interested in
@@ -31,18 +24,21 @@ def solution(n):
     n=x is previous value + (4 * (n-1))
     -------------------------------------------------------------------
     '''
+
     if n==1:
         return 1 # base case
     return ((n-1)*4) + solution(n-1) # recursion
 
 def formula(n):
     '''
+    EXPLANATION
     -------------------------------------------------------------------
-    However, a formula can be established using RREF...
+    A formula can be established using RREF...
 
     return 1 - (2*n) + (2*(n**2))
 
     and this can be rewritten into a reader-friendly formula used below
     -------------------------------------------------------------------
     ''' 
+    
     return n**2 + (n-1)**2

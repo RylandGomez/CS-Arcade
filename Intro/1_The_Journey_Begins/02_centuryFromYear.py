@@ -2,22 +2,20 @@ import math
 
 def solution(year):
     '''
-    PROMPT
+    EXPLANATION
     -------------------------------------------------------------------
-    Given a year, return the century it is in. The first century spans
-    from the year 1 up to and including the year 100, the second - from
-    the year 101 up to and including the year 200, etc.
+    The math.ceil() function always rounds a float up to the nearest
+    integer and returns it. This is utilized to ensure the
+    encapsulating century is returned.
     -------------------------------------------------------------------
     '''
-
-    # The math.ceil() function always rounds a float up to the nearest
-    # integer and returns it.
     
     return math.ceil(year/100)
     
 
 def solution2(year):
     '''
+    EXPLANATION
     -------------------------------------------------------------------
     If it is desired to avoid math library, floor division can be used:
         99 is added to the year value before the floor division as
@@ -27,6 +25,7 @@ def solution2(year):
         By adding one less than the floor division value, the algorithm
         ensures an output of +1 for all values except multiples of 100.
     -------------------------------------------------------------------
-    '''      
+    '''
+          
     return (year + 99) // 100
     
