@@ -29,7 +29,7 @@ def solution(s1, s2):
                 count += s1_dict[letter]
     return count
 
-def concise(s1, s2):
+def oneline(s1, s2):
     '''
     EXPLANATION
     -------------------------------------------------------------------

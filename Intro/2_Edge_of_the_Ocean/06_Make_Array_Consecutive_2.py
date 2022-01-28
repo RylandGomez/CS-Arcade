@@ -22,7 +22,7 @@ def solution(statues):
     current_statues = len(statues)
     return total_statues - current_statues
 
-def condensed(statues):
+def oneline(statues):
     '''
     EXPLANATION
     -------------------------------------------------------------------

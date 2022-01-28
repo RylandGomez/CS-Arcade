@@ -13,7 +13,7 @@ def solution(year):
     return math.ceil(year/100)
     
 
-def solution2(year):
+def alternate(year):
     '''
     EXPLANATION
     -------------------------------------------------------------------

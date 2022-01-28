@@ -1,4 +1,4 @@
-def solution(inputString):
+def oneline(inputString):
     '''
     EXPLANATION
     -------------------------------------------------------------------
